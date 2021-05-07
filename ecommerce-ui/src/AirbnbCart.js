@@ -13,7 +13,7 @@ export default class Cart extends React.Component {
                         <ul>
                             {cartList.map((item, key) =>
                             <li key={key}>
-                                <b>{item.title}: ${item.cost}</b> <button className= "RemoveCart" onClick={(e) => this.props.handleRemoveFromCart(e,item)}>X</button>
+                                <b>{item.title}: ${item.cost}</b> <button className= "RemoveCart" onClick={(e) => this.props.handleRemoveFromCart(e,item)}>Remove</button>
                             </li>
                             )}
                         </ul>

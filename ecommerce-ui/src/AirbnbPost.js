@@ -10,7 +10,7 @@ export default class AirbnbCard extends React.Component {
                 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
                 {(this.props.card.image.length > 0) ?
                     (<img className="image" src={this.props.card.image} alt="rental" />) :
-                    (<img className="image" src="https://previews.123rf.com/images/iimages/iimages1205/iimages120500876/13732734-illustration-a-simple-house-front-view.jpg" alt="rental" />)}
+                    (<img className="image" src="https://media.istockphoto.com/vectors/heart-sign-in-house-icon-ed-icon-love-home-symbol-vector-id1029955978" alt="unavailable" />)}
                 <div className="card-text">
                     <div>
                         <p className="house-type">{this.props.card.houseType} in {this.props.card.location.city}, {this.props.card.location.country}</p>
@@ -21,9 +21,9 @@ export default class AirbnbCard extends React.Component {
                     </div>
                     <div className="additional-details">
                         <div>
-                            {(this.props.card.rating.reviews > 0) ? (<p><i className="material-icons">star</i>  {this.props.card.rating.stars} ({this.props.card.rating.reviews})</p>) : null}
+                            {(this.props.card.rating.reviews > 0) ? (<p><i className="material-icons">star_border</i>  {this.props.card.rating.stars} ({this.props.card.rating.reviews})</p>) : null}
                         </div>
-                        <p><i className="material-icons">person</i>
+                        <p><i className="material-icons">person_outline</i>
                             {isSuperhost ? (<em>{this.props.card.host.name} (Superhost)</em>) : (<em>{this.props.card.host.name}</em>)}</p>
                         <div>
                             <button className="cart" onClick={(e) => this.props.onClick(e, this.props.id)}>Add to Cart</button>

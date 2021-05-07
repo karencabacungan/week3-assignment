@@ -209,7 +209,7 @@ class Homepage extends React.Component {
                             </tr>
                         </tbody>
                     </table>
-                    <button type="submit">Add Rental</button>
+                    <button type="submit">Add Listing</button>
                 </form>
             </div>
         );
@@ -221,8 +221,8 @@ class Homepage extends React.Component {
                 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
                 <hr></hr>
                 <div className="main_page">
-                    <i className="material-icons">house</i>
-                    <h3 className="heading">Airbnb Rentals</h3>
+                    <h2><i className="material-icons">roofing</i></h2>
+                    <h3 className="heading">Airbnb Listings</h3>
                     <div>
                         <button className="host" onClick={() => this.setState({ showForm: true })}>Become a Host</button>
                         {this.state.showForm && this.renderForm()}
